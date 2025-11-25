@@ -7,16 +7,12 @@
     aperta aqui pra copiar e se não der certo tu que fez errado  
 </button>  
 
-<script>  
-    document.getElementById("AiMeuCu").addEventListener("click", function () {  
-
-        const manoSeNaoDerCertoSaPorra = `document.querySelectorAll('input, textarea').forEach(el => {  
-el.onpaste = e => true;
-
-});`;
-
-        navigator.clipboard.writeText(manoSeNaoDerCertoSaPorra);  
-    });  
+<script>
+document.getElementById("AiMeuCu").addEventListener("click", function () {
+    navigator.clipboard.writeText(`document.querySelectorAll('input, textarea').forEach(el => {
+        el.onpaste = e => true;
+    });`);
+});
 </script>
 
 </body>  
