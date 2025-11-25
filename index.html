@@ -1,23 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Pq tu ta olhando o nome do site?</title>
-</head>
-<body>
+<!DOCTYPE html>  <html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Pq tu ta olhando o nome do site?</title>  
+</head>  
+<body>  <button id="AiMeuCu">  
+    aperta aqui pra copiar e se não der certo tu que fez errado  
+</button>  
 
-    <button id="copiarBtn">
-        aperta aqui pra copiar e se não der certo tu que fez errado
-    </button>
+<script>  
+    document.getElementById("AiMeuCu").addEventListener("click", function () {  
 
-    <script>
-        document.getElementById("copiarBtn").addEventListener("click", function () {
-            navigator.clipboard.writeText("document.querySelectorAll('input, textarea').forEach(el => {
-    el.onpaste = e => true;     // garante que não bloqueie
-    el.addEventListener('paste', e => {}); // só ativa o evento
-});")
-        });
-    </script>
+        const manoSeNaoDerCertoSaPorra = `document.querySelectorAll('input, textarea').forEach(el => {  
+el.onpaste = e => true;
 
-</body>
+});`;
+
+navigator.clipboard.writeText(manoSeNaoDerCertoSaPorra);  
+    });  
+</script>
+
+</body>  
 </html>
